@@ -1,0 +1,110 @@
+ 1  yum install docker -y
+    2  service docker status
+    3  service docker start
+    4  service docker status
+    5  docker info
+    6  docker version
+    7  docker images
+    8  docker pull centos
+    9  docker images
+   10  docker ps
+   11  docker ps -a
+   12  docker run -it centos
+   13  docker ps
+   14  docker pull jenkins
+   15  docker images
+   16  docker run -itd jenkins
+   17  docker ps
+   18  docker run -p 8080:8080 -p 50000:50000 jenkins
+   19  docker ps
+   20  docker ps -a
+   21  docker ps
+   22  docker run -it -p 8080:8080 -p 50000:50000 jenkins
+   23  iptables -F
+   24  which java
+   25  yum install java -y
+   26  doocker ps
+   27  docker ps
+   28  historyy
+   29  history
+   30  service docker start
+   31  service docker status
+   32  docker images
+   33  docker ps
+   34  docker ps -a
+   35  ls
+   36  docker info
+   37  ld
+   38  ls
+   39  pwd
+   40  mkdir Docker-test
+   41  cd Docker-test/
+   42  vi Dockerfile
+   43  docker build -t mycentos .
+   44  docker images
+   45  docker run -it mycentos
+   46  docker run -itd 8f86bf47ed7a
+   47  docker ps
+   48  docker ps -a
+   49  docker start ebd4a0d2a3de
+   50  docker ps
+   51  ls
+   52  rm Dockerfile
+   53  rm -rf Dockerfile
+   54  vi Dockerfile
+   55  docker build -t demoimage:1.0 .
+   56  vi Dockerfile
+   57  docker build -t demoimage:1.0 .
+   58  docker images
+   59  docker login
+   60  dockerlogin
+   61  docker login
+   62  8985327205
+   63  docker login
+   64  docker images
+   65  docker tag demoimage:1.0 8985327205/demotestimage
+   66  docker images
+   67  docker push 8985327205/demotestimage
+   68  ls
+   69  docker images
+   70  docker rmi docker 8985327205/demotestimage
+   71  docker rmi 8985327205/demotestimage
+   72  docker rmi -f 8985327205/demotestimage
+   73  docker rm 8985327205/demotestimage
+   74  docker rmi mycentos
+   75  docker rmi -f mycentos
+   76  docker pull 8985327205/demotestimage
+   77  docker images
+   78  ls
+   79  docker images
+   80  docker run -it centos
+   81  docker diff 076265b256a2
+   82  docker attach 076265b256a2
+   83  docker diff 076265b256a2
+   84  docker ps -a
+   85  docker attach 076265b256a2
+   86  docker export 076265b256a2 > demo.tar
+   87  ls
+   88  ls -ll
+   89  df demo.tar
+   90  docker export 076265b256a2 demo.tar
+   91  docker import demo.tar
+   92  docker images
+   93  ls
+   94  docker save centos > test.tgz
+   95  ls
+   96  docker load < test.tgz
+   97  docker images
+   98  ls -a
+   99  rm -rf test.tgz
+  100  ls
+  101  docker load < test.tgz
+  102  cd
+  103  cd ../..
+  104  ls
+  105  cd opt/
+  106  ls
+  107  vi jenkins.war
+  108  ls
+  109  yum install java-1.8.0-openjdk-devel -y
+  110  history
